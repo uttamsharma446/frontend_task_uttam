@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-rounded{
+  @apply border-2 m-auto rounded-lg p-2 flex w-full justify-center
+}
+
+.sign-btn{
+  @apply w-full mb-10 mt-10 bg-primary text-white py-2  rounded-lg
+ 
+ }
+ .rememberme-checkbox{
+  @apply absolute -bottom-5  -left-1 w-8 h-4 sm:h-3 sm:-bottom-4
+ }
+
+* {
+  
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.form {
+  background-color: #fff;
+  padding: 50px 80px 0px 80px;
+}
+
+
+.line-with-text{
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #C1CFC0;
+ 
+ 
+}
+.continue-with-text{
+  position: absolute;
+  left:35%;
+  bottom:-20px;
+  padding:10px 5px;
+  background-color: #fff;
+   
+}
+
+
+
+
+
+
+@media  (min-width: 600px) and (max-width:1024px) {
+   .hero-image{
+    display: none;
+   }
+    .main{
+        
+        justify-content: center;
+        display: flex;
+       padding:100px;
+        width:100%;
+    }
+    .signin-img1{
+        display: none;
+    }
+    .form{
+        padding: 20px;
+        border:1px solid;
+        width: 100%;
+        box-shadow: 5px 10px 18px #888888;
+
+    }
+  
+  }
